@@ -1,0 +1,273 @@
+/* This fires as soon as the element enters the dorm */
+.list-transition-enter,
+.list-transition-appear {
+  /*We give the list the initial dimension of the list button*/
+  top: 0;
+  width: 40px;
+  height: 40px;
+  color: transparent;
+  opacity: 0.01;
+  background-color: #3987c9;
+  transition: all 500ms;
+}
+/* This is where we can add the transition*/
+.list-transition-enter-active,
+.list-transition-appear-active {
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background-color: gold;
+  transition: all 500ms;
+  opacity: 1;
+}
+
+/* This fires as soon as the this.state.showList is false */
+.list-transition-exit {
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #3987c9;
+  opacity: 1;
+  transition: all 500ms;
+
+}
+/* fires as element leaves the DOM*/
+.list-transition-exit-active {
+  top: 0;
+  width: 40px;
+  height: 40px;
+  color: transparent;
+  opacity: 0.01;
+  background-color: gold;
+  transition: all 500ms;
+}
+
+.active-card {
+  width: 180px !important;
+  height: 260px !important;
+  box-shadow: 0 0 50px #3987c9 !important; 
+  border-radius: 25px;
+  border: 3px solid gold;
+  cursor: pointer;
+  transition: all 1s !important;
+}
+
+.active-card:hover {
+  width: 190px !important;
+  height: 270px !important;
+  box-shadow: 0 0 50px gold !important; 
+  border-radius: 25px;
+  border: 3px solid white;
+  cursor: pointer;
+  transition: all 1s !important;
+}
+
+button {
+  outline: none;
+  background-color: black;
+  color: #fff;
+  font-size: 25px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  padding: 4px 18px;
+  margin: 25px;
+  transition: all 230ms ease-in-out;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  border: 1px solid gold;
+  color: black;
+}
+
+.card-transition-enter,
+.card-transition-appear {
+  /*We give the list the initial dimension of the list button*/
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  color: transparent;
+  opacity: 0.01;
+  transition: all 200ms;
+}
+
+.card-transition-enter-active,
+.card-transition-appear-active {
+  transition: all 200ms;
+  opacity: 1;
+}
+
+/* This fires as soon as the this.state.showList is false */
+.card-transition-exit {
+  opacity: 1;
+  transition: all 200ms;
+
+}
+/* fires as element leaves the DOM*/
+.card-transition-exit-active {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  color: transparent;
+  opacity: 0.01;
+  transition: all 200ms;
+}
+
+.container {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  perspective: 1000px;
+  left: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  align-items: center;
+  cursor: pointer;
+}
+
+.cube {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: 0.5s transform linear;
+}
+
+.cube > div {
+  width: 100px;
+  height: 100px;
+  border: 20px solid gold;
+  box-sizing: border-box;
+  position: absolute;
+  background: white;
+  text-align: center;
+  font-size: 35px;
+  line-height: 75px;
+
+  box-shadow: 1px 2px 5px 1px gray inset;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cube > div:hover {
+  width: 100px !important;
+  height: 100px !important;
+  box-shadow: 0 0 100px gold !important; 
+  border: 3px solid white;
+  cursor: pointer;
+  transition: all 0.5s !important;
+  line-height: 40px;
+  font-size: 25px;
+}
+
+.cube > div:hover span{
+  display: none;
+}
+
+.cube > div:hover:before{
+  content: 'Rzut kostką';
+}
+
+.cube .front {
+  transform: rotateX(0deg) translateZ(50px);
+  border-color: brown;
+
+}
+
+.cube .back {
+  transform: rotateX(180deg) translateZ(50px);
+  border-color: green;
+}
+
+.cube .right {
+  transform: rotateY(90deg) translateZ(50px);
+  border-color: blue;
+}
+
+.cube .left {
+  transform: rotateY(-90deg) translateZ(50px);
+  border-color: red;
+}
+
+.cube .top {
+  transform: rotateX(90deg) translateZ(50px);
+  border-color: black;
+}
+
+.cube .bottom {
+  transform: rotateX(-90deg) translateZ(50px);
+  border-color: gold;
+}
+
+.cube.show-front {
+  transform: rotateX(0deg);
+}
+
+.cube.show-back {
+  transform: rotateX(-180deg);
+}
+
+.cube.show-right {
+  transform: rotateY(-90deg);
+}
+
+.cube.show-left {
+  transform: rotateY(90deg);
+}
+
+.cube.show-top {
+  transform: rotateX(-90deg);
+}
+
+.cube.show-bottom {
+  transform: rotateX(90deg);
+}
+
+.logo {
+  position: fixed;
+  right: 25px;
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url(../../img/logo.svg);
+  background-repeat: no-repeat;
+  background-attachment: center;
+  background-position: center center;
+  background-size: contain;
+}
+
+.logo-classroom {
+  position: fixed;
+  right: 50%;
+  width: 200px;
+  height: 200px;
+  top: 50px;
+  transform: translateX(50%);
+  background-image: url(../../img/logo.svg);
+  background-repeat: no-repeat;
+  background-attachment: center;
+  background-position: center center;
+  background-size: contain;
+}
+
+.endGameBtn {
+  outline: none;
+  background-color: gold;
+  color: black;
+  font-size: 25px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  padding: 4px 18px;
+  margin: 25px;
+  transition: all 230ms ease-in-out;
+  margin-top: 1em;
+  cursor: pointer;
+}
