@@ -273,3 +273,7 @@ button:hover {
   margin-top: 1em;
   cursor: pointer;
 }
+
+h2, h3, h4 {
+ z-index: 1; 
+}
