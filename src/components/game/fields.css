@@ -247,8 +247,8 @@ button:hover {
 .logo-classroom {
   position: fixed;
   right: 50%;
-  width: 15vh;
-  height: 15vh;
+  width: 13vh;
+  height: 13vh;
   top: 50px;
   transform: translateX(50%);
   background-image: url(../../img/logo.svg);
