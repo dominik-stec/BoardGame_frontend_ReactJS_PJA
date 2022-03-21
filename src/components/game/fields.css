@@ -122,10 +122,11 @@ button:hover {
 .container {
   width: 100px;
   height: 100px;
+  z-index: 7;
   position: fixed;
   perspective: 1000px;
   left: 25px;
-  top: 50%;
+  top: 25vh;
   transform: translateY(-50%);
   align-items: center;
   cursor: pointer;
