@@ -1063,7 +1063,7 @@ export function Game() {
 
     handleUserLeave()
       
-    }, 100)
+    }, 1000)
       
     }
 
@@ -1082,7 +1082,7 @@ export function Game() {
       setTimeout(()=>{
       tetrisSimilar()
      retrieveAsksData()
-     },10)
+     },1000)
       
     }
 
