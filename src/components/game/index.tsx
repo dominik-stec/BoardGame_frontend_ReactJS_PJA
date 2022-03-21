@@ -1024,10 +1024,18 @@ export function Game() {
     if(isFirstRender.current) {
       handleGameStart()
       initFirstPlayer()
+      
+      setTimeout(()=>{
+        pushNewState()
+      }, 1500)
 
       isFirstRender.current = false
     }
-
+    
+    if(!isFirstRender.current) {
+      
+    setTimeout(()=>{
+      
     handleWinner()
 
     setTimeout( () => {
@@ -1040,12 +1048,23 @@ export function Game() {
     handleEndGame()
 
     handleUserLeave()
+      
+    }, 100)
+      
+    }
 
   });
 
   useEffect(() => {
-     tetrisSimilar()
+    
+    if(!isFirstRender.current) {
+     
+      setTimeout(()=>{
+      tetrisSimilar()
      retrieveAsksData()
+     },10)
+      
+    }
 
   },[])
 
