@@ -1018,12 +1018,26 @@ export function Game() {
       })
       }
     }
+  
+  const giveMeTurnForRescueInit = () => {
+
+            if(gameState) {
+              gameState.filter(s => {return s}).forEach(s => {
+                if(s.name == individualName) {
+                  s.isActive = true;
+                  setPlayerInTurn(true);
+                  return
+                }}) 
+            }
+
+          }
 
   useEffect(() => {
 
     if(isFirstRender.current) {
       handleGameStart()
       initFirstPlayer()
+      
       
       setTimeout(()=>{
         pushNewState()
@@ -1056,6 +1070,12 @@ export function Game() {
   });
 
   useEffect(() => {
+    
+    if(isFirstRender.current) {
+      setTimeout(() => {
+        giveMeTurnForRescueInit(); 
+      }, 1500) 
+    }
     
     if(!isFirstRender.current) {
      
