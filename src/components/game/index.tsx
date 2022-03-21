@@ -452,9 +452,9 @@ const Field = styled.div<any>`
   align-items: center;
   justify-content: center;
   margin: 10px;
-  width: 80px;
-  height  80px;
-  font-size: ${props => props.number == 6 ? '15px' : '8px'};
+  width: 8vh;
+  height: 8vh;
+  font-size: ${props => props.number == 6 ? '1.4vh' : '0.7vh'};
   font-family: Helvetice, sans-serif;
   overflow: hidden;
   overflow-wrap: break-word;
