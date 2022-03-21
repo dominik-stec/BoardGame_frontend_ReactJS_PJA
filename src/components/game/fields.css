@@ -232,6 +232,7 @@ button:hover {
 
 .logo {
   position: fixed;
+  z-index: -1;
   right: 25px;
   width: 200px;
   height: 200px;
@@ -246,6 +247,7 @@ button:hover {
 
 .logo-classroom {
   position: fixed;
+  z-index: -1;
   right: 50%;
   width: 13vh;
   height: 13vh;
