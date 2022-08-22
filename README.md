@@ -142,23 +142,23 @@ and repeat this entry for each player always in new tab depends on players count
 
 Each player could enter his name and browse number of players in game round.
 
-<img src="images/frontend/login.png"  width="250" />
+<img src="images/front/login.png"  width="250" />
 
 After complete count of players a game will start.
 
-<img src="images/frontend/game_init.png"  width="250" />
+<img src="images/front/game_init.png"  width="250" />
 
-<img src="images/frontend/game_move1.png"  width="250" />
+<img src="images/front/game_move1.png"  width="250" />
 
-<img src="images/frontend/game_cube.png"  width="250" />
+<img src="images/front/game_cube.png"  width="250" />
 
-<img src="images/frontend/game_fields.png"  width="250" />
+<img src="images/front/game_fields.png"  width="250" />
 
-<img src="images/frontend/game_perspective.png"  width="250" />
+<img src="images/front/game_perspective.png"  width="250" />
 
-<img src="images/frontend/game_perspective3.png"  width="250" />
+<img src="images/front/game_perspective3.png"  width="250" />
 
-<img src="images/frontend/game_perspective4.png"  width="250" />
+<img src="images/front/game_perspective4.png"  width="250" />
 
 
 
