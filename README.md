@@ -30,12 +30,12 @@
     <img src="images/logo.jpg" alt="Logo" width="540" height="80">
   </a>
 
-  <h2 align="center">ChangeYourMindGameBackend</h2>
+  <h2 align="center">ChangeYourMindGameClient</h2>
 
   <p align="center">
-    <h3> This project is a backend for board game. I made digital game based on reality game board. It was work work for my study practice. This project is dedicated for local government 'Self-Help Center' Institution where i realised my study practice.  </h3>
+    <h3> This project is a frontend for board game. I made digital game based on reality game board. It was work work for my study practice. This project is dedicated for local government 'Self-Help Center' Institution where i realised my study practice.  </h3>
     <br />
-    <a href="https://github.com/dccstcc/ChangeYourMindGameBackend"><strong>» go to CODE »</strong></a>
+    <a href="https://github.com/dccstcc/ChangeYourMindGameClient"><strong>» go to CODE »</strong></a>
     <br />
     <br />
     <!-- <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
@@ -79,15 +79,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<p> In this project I used Nodemon build tool with Node.js framework and Node Package Manager for build and deploy backend for web application. I used Express framework for implement functionality. It is possible to build project by use yarn build tools</p>
+<p> Frontend of web game application is write in React.js framework. In this project I used Node.js and Node Package Manager for build and deploy frontend for application. </p>
 
 ### Built With
 
 This project use technology below.
 * [![node][node-shield]][node-url]
-* [![express][express-shield]][express-url]
-* [![mysql][mysql-shield]][mysql-url]
-
+* [![react][react-shield]][react-url]
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -99,140 +97,59 @@ This is instructions on setting up this project locally.
 
 Node.js JavaScript framework for build project is need. <br />
 Node.js Package Manager 'npm' for maintain external dependencies is need. <br />
-Express.js JavaScript framework for build backend solutions is need. <br />
+React.js JavaScript framework for build frontend solutions is need. <br />
 <br />
-MySQL database server is need.
 
 ### Installation
 
-1. Clone the repo with game backend
+1. Clone the repo with game frontend
    ```sh
-   git clone https://github.com/dccstcc/ChangeYourMindGameBackend.git
-   ```
-   
-2. Install nodemon by use npm:
-   ```sh
-   npm install -g nodemon
-   ```
-   or using yarn:   
-   ```sh
-   yarn global add nodemon
+   git clone https://github.com/dccstcc/ChangeYourMindGameClient.git
    ```
 
-3. Install socket.io library dependency
+2. Install React framework by npm
    ```sh
-   npm install socket-io-server
+   npm install react --legacy-peer-deps
    ```
    
-4. Install software which provide MySQL server database: <br />
-example: LAMP - Windows/Linux/Mac
-```sh
-https://bitnami.com/stack/lamp/installer
-```
+3. Install React-dom dependency by npm
+   ```sh
+   npm install react-dom --legacy-peer-deps
+   ```
+   
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Run MySQL database server and create new connection with properties:
-example:
+Go to backend project repository
 ```sh
-host: localhost
-port: 8889
-user: root
-password: root
+https://github.com/dccstcc/ChangeYourMindGameBackend
 ```
+clone and run game backend according to instructions
 
-Create database with exactly name:
+After run backend it is possible to run frontend
 ```sh
-database: 'change_your_mind'
+cd  ChangeYourMindGameClient
+npm start
 ```
+new browser tab with login game page should open
 
-Create table with exactly columns:
-```sql
-CREATE TABLE my_db (
-    name varchar(255),
-    room varchar(255),
-    room_id varchar(255),
-    socket varchar(255)
-);
-```
-
-Create second table with exactly columns:
-```sql
-CREATE TABLE my_db_exit (
-    name varchar(255),
-    room_name varchar(255),
-    socket varchar(255)
-);
-```
-
-Go to source file at:
+Into new web browser tab enter:
 ```sh
-https://github.com/dccstcc/ChangeYourMindGameBackend/blob/master/src/api/controllers/gameController.ts
-``` 
-edit gameController.ts in section:
-```javascript
-const connection = mysql.createConnection({
-  host: 'ls-eea22ac767ce1f4dd5f49f5390e1bad16a74196c.cwlpvgtum6qs.eu-west-2.rds.amazonaws.com',
-  port: '3306',
-  user: 'root',
-  password: 'ChangeYourMind1!',
-  database: 'change_your_mind'
-})
-``` 
-and replace variables on to:
-- host: 'localhost'
-- port: '8889'
-- user: 'root'
-- password: 'root'
+localhost:3000
+```
+and repeat this entry for each player always in new tab depends on players count
 
-<br />
+<br /><br />
 
-according to values existed in running MySQL database.
+Each player could enter his name and browse number of players in game round
 
-<br />
+<br /><br />
 
-Do not change variable:
-- database: 'change_your_mind'
-
-<br />
-
-<img src="images/backend/database.png" width="250"/>
+After complete complete count of players a game will start
 
 
-Start backend
-   ```sh
-   cd ChangeYourMindGameBackend
-   npm start
-   ```  
-
-In terminal we can observe backend events with coordination of frontend part of this game. Backend listen on localhost:9000. Nodemon serve continously work of backend.
-   
- <img src="images/npm_start.png" width="250"/>
-   
-<!-- [![browser][browser]][browser]
- -->
-
-<img src="images/localhost.png" width="250"/>
-
-<!-- [![summary][summary]][summary] -->
-
-
-<!-- _For more examples, please refer to the [Documentation](https://example.com)_ -->
-
-In coordination with frontend application we can see bottom logs in command line:
-
-Logs after register players:
-
-<img src="images/backend/login_cmd.png"  width="250" />
-
-Backend logs in working game:
-
-<img src="images/backend/game_cmd.png"  width="250" />
-
-Database in working game:
-
-<img src="images/backend/database_work.png"  width="250" />
+<img src="images/frontend/database_work.png"  width="250" />
 
 
 <!-- ROADMAP 
@@ -296,15 +213,15 @@ Project URL:
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/dccstcc/TAU_PJATK_practice.svg?style=for-the-badge
-[contributors-url]: https://github.com/dccstcc/ChangeYourMindGameBackend/graphs/contributors
+[contributors-url]: https://github.com/dccstcc/ChangeYourMindGameClient/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/dccstcc/TAU_PJATK_practice.svg?style=for-the-badge
-[forks-url]: https://github.com/dccstcc/ChangeYourMindGameBackend/network/members
+[forks-url]: https://github.com/dccstcc/ChangeYourMindGameClient/network/members
 [stars-shield]: https://img.shields.io/github/stars/dccstcc/TAU_PJATK_practice.svg?style=for-the-badge
-[stars-url]: https://github.com/dccstcc/ChangeYourMindGameBackend/stargazers
+[stars-url]: https://github.com/dccstcc/ChangeYourMindGameClient/stargazers
 [issues-shield]: https://img.shields.io/github/issues/dccstcc/TAU_PJATK_practice.svg?style=for-the-badge
-[issues-url]: https://github.com/dccstcc/ChangeYourMindGameBackend/issues
+[issues-url]: https://github.com/dccstcc/ChangeYourMindGameClient/issues
 [license-shield]: https://img.shields.io/badge/License-NONE-orange
-[license-url]: https://github.com/dccstcc/ChangeYourMindGameBackend/blob/master/LICENSE.md
+[license-url]: https://github.com/dccstcc/ChangeYourMindGameClient/blob/master/LICENSE.md
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/dominik-stec
 [product-screenshot]: images/screenshot.png
@@ -336,6 +253,8 @@ Project URL:
 [express-url]: https://expressjs.com/
 [mysql-shield]: https://img.shields.io/badge/-MySQL-blue
 [mysql-url]: https://www.mysql.com/
+[react-shield]: https://img.shields.io/badge/-React-white
+[react-url]: https://pl.reactjs.org/
 
 [server_run]: images/server_run.png 
 [client_run]: images/client_run.png
