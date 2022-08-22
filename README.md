@@ -138,11 +138,11 @@ Into new web browser tab enter:
 ```sh
 localhost:3000
 ```
-and repeat this entry for each player always in new tab depends on players count
+and repeat this entry for each player always in new tab depends on players count.
 
-Each player could enter his name and browse number of players in game round
+Each player could enter his name and browse number of players in game round.
 
-After complete complete count of players a game will start
+After complete count of players a game will start.
 
 
 <img src="images/frontend/database_work.png"  width="250" />
