@@ -198,7 +198,7 @@ Dominik Stec - dccstcc@gmail.com
 
 Project URL: 
 <br />
-`https://github.com/dccstcc/ChangeYourMindGameBackend.git`
+`https://github.com/dccstcc/ChangeYourMindGameClient.git`
 
 
 
