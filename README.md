@@ -112,7 +112,7 @@ React.js JavaScript framework for build frontend solutions is need. <br />
    npm install react --legacy-peer-deps
    ```
    
-3. Install React-dom dependency by npm
+3. Install React-DOM dependency by npm
    ```sh
    npm install react-dom --legacy-peer-deps
    ```
@@ -140,11 +140,7 @@ localhost:3000
 ```
 and repeat this entry for each player always in new tab depends on players count
 
-<br /><br />
-
 Each player could enter his name and browse number of players in game round
-
-<br /><br />
 
 After complete complete count of players a game will start
 
