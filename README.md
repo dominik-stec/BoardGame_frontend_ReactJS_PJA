@@ -5,8 +5,6 @@
 *** Thanks again! Now go create something AMAZING! :D
 -->
 
-
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -15,13 +13,13 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![NO LICENSE][license-shield]][license-url]
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -30,14 +28,14 @@
     <img src="images/logo.jpg" alt="Logo" width="540" height="80">
   </a>
 
-  <h2 align="center">ChangeYourMindGameClient</h2>
+  <h2 align="center">Frontend of board game in React.js</h2>
 
   <p align="center">
-    <h3> This project is a frontend for board game. I made digital game based on reality game board. It was work work for my study practice. This project is dedicated for local government 'Self-Help Center' Institution where i realised my study practice.  </h3>
-    <br />
+    <h4> This project is a frontend for board game. I made digital game based on reality game board. It was work work for my study practice. This project is dedicated for local government 'Self-Help Center' Institution where i realised my study practice.  </h4>
+    <!-- <br />
     <a href="https://github.com/dccstcc/ChangeYourMindGameClient"><strong>» go to CODE »</strong></a>
     <br />
-    <br />
+    <br /> -->
     <!-- <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
     ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
@@ -46,52 +44,50 @@
   </p>
 </p>
 
-
-
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#project-description">Project description</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#Libraries-and-frameworks">Libraries / Frameworks</a></li>
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#getting-started">Native deploy</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#how-to-use">How to use ?</a></li>
     <!-- <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li> -->
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contact">Contact with me</a></li>
     <!-- <li><a href="#acknowledgements">Acknowledgements</a></li> -->
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
-## About The Project
+
+## Project description
 
 <p> Frontend of web game application is write in React.js framework. In this project I used Node.js and Node Package Manager for build and deploy frontend for application. </p>
 
-### Built With
+### Libraries and frameworks
 
 This project use technology below.
-* [![node][node-shield]][node-url]
-* [![react][react-shield]][react-url]
+
+- [![node][node-shield]][node-url]
+- [![react][react-shield]][react-url]
 
 <!-- GETTING STARTED -->
-## Getting Started
+
+## Native deploy
 
 This is instructions on setting up this project locally.
-
 
 ### Prerequisites
 
@@ -103,41 +99,47 @@ React.js JavaScript framework for build frontend solutions is need. <br />
 ### Installation
 
 1. Clone the repo with game frontend
+
    ```sh
-   git clone https://github.com/dccstcc/ChangeYourMindGameClient.git
+   git clone https://github.com/dominik-stec/BoardGame_frontend_ReactJS_PJA.git
    ```
 
 2. Install React framework by npm
    ```sh
    npm install react --legacy-peer-deps
    ```
-   
 3. Install React-DOM dependency by npm
    ```sh
    npm install react-dom --legacy-peer-deps
    ```
-   
 
 <!-- USAGE EXAMPLES -->
-## Usage
+
+## How to use
 
 Go to backend project repository
+
 ```sh
 https://github.com/dccstcc/ChangeYourMindGameBackend
 ```
+
 clone and run game backend according to instructions
 
 After run backend it is possible to run frontend
+
 ```sh
 cd  ChangeYourMindGameClient
 npm start
 ```
+
 new browser tab with login game page should open
 
 Into new web browser tab enter:
+
 ```sh
 localhost:3000
 ```
+
 and repeat this entry for each player always in new tab depends on players count.
 
 Each player could enter his name and browse number of players in game round.
@@ -160,16 +162,14 @@ After complete count of players a game will start.
 
 <img src="images/front/game_perspective4.png"  width="250" />
 
-
-
-<!-- ROADMAP 
+<!-- ROADMAP
 ## Roadmap
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
 
 -->
 
-<!-- CONTRIBUTING 
+<!-- CONTRIBUTING
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -183,26 +183,26 @@ Contributions are what make the open source community such an amazing place to l
 -->
 
 <!-- LICENSE -->
+
 ## License
 
-This project has not a license. All rights are reserved and it is not Open Source or free. You cannot modify or redistribute this code without explicit permission from the copyright holder, because projects I realised are my materials from PJATK studies. See `LICENSE` for more information.
-
-
+This project has not a license.
+All rights are reserved and it is not Open Source or free. You cannot modify or redistribute this code without explicit permission from the copyright holder, because projects which I realised are private conception from PJATK studies.
+See `LICENSE` for more information.
 
 <!-- CONTACT -->
+
 ## Contact
 
-Dominik Stec - dccstcc@gmail.com
+Dominik Stec - dominikstec@devapp.tools
 
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-Project URL: 
+Project URL:
 <br />
-`https://github.com/dccstcc/ChangeYourMindGameClient.git`
+`https://github.com/dominik-stec/BoardGame_frontend_ReactJS_PJA.git`
 
-
-
-<!-- ACKNOWLEDGEMENTS 
+<!-- ACKNOWLEDGEMENTS
 ## Acknowledgements
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Img Shields](https://shields.io)
@@ -218,10 +218,9 @@ Project URL:
 
 -->
 
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/dccstcc/TAU_PJATK_practice.svg?style=for-the-badge
 [contributors-url]: https://github.com/dccstcc/ChangeYourMindGameClient/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/dccstcc/TAU_PJATK_practice.svg?style=for-the-badge
@@ -235,7 +234,6 @@ Project URL:
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/dominik-stec
 [product-screenshot]: images/screenshot.png
-
 [junit-shield]: https://img.shields.io/badge/-JUnit-green
 [junit-url]: https://junit.org/junit5/
 [mockito-shield]: https://img.shields.io/badge/-Mockito-red
@@ -256,7 +254,6 @@ Project URL:
 [robotframework-url]: https://robotframework.org/
 [python-shield]: https://img.shields.io/badge/-Python-yellow
 [python-url]: https://www.python.org/
-
 [node-shield]: https://img.shields.io/badge/-Node-green
 [node-url]: https://nodejs.org/en/
 [express-shield]: https://img.shields.io/badge/-Express-white
@@ -265,13 +262,9 @@ Project URL:
 [mysql-url]: https://www.mysql.com/
 [react-shield]: https://img.shields.io/badge/-React-white
 [react-url]: https://pl.reactjs.org/
-
-[server_run]: images/server_run.png 
+[server_run]: images/server_run.png
 [client_run]: images/client_run.png
 [client]: images/client.png
 [jetty_run]: images/jetty_run.png
 [browser]: images/browser.png
 [summary]: images/summary.png
-
-
-
