@@ -120,7 +120,7 @@ React.js JavaScript framework for build frontend solutions is need. <br />
 Go to backend project repository
 
 ```sh
-https://github.com/dccstcc/ChangeYourMindGameBackend
+https://github.com/dominik-stec/BoardGame_backend_ExpressJS_PJA
 ```
 
 clone and run game backend according to instructions
